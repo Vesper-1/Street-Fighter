@@ -42,7 +42,7 @@ bullet1 = pygame.transform.scale(
         pygame.image.load(os.path.join('assets', 'bullet.png')), 90), (60, 60))
 bullet1X = 0
 bullet1Y = 0
-bullet1_change = 3
+bullet1_change = 5
 fire1 = True
 
 bullet2 = pygame.transform.scale(
@@ -50,7 +50,7 @@ bullet2 = pygame.transform.scale(
         pygame.image.load(os.path.join('assets', 'bullet.png')), -90), (60, 60))
 bullet2X = 0
 bullet2Y = 0
-bullet2_change = 3
+bullet2_change = 5
 fire2 = True
 
 scoreOne = scoreTwo =0
