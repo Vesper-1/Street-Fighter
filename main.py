@@ -42,7 +42,7 @@ bullet1 = pygame.transform.scale(
         pygame.image.load(os.path.join('assets', 'bullet.png')), 90), (60, 60))
 bullet1X = 0
 bullet1Y = 0
-bullet1_change = 1
+bullet1_change = 3
 fire1 = True
 
 bullet2 = pygame.transform.scale(
@@ -50,7 +50,7 @@ bullet2 = pygame.transform.scale(
         pygame.image.load(os.path.join('assets', 'bullet.png')), -90), (60, 60))
 bullet2X = 0
 bullet2Y = 0
-bullet2_change = 1
+bullet2_change = 3
 fire2 = True
 
 scoreOne = scoreTwo =0
@@ -207,10 +207,10 @@ while running:
              running = False
           if event.type == pygame.KEYDOWN:
               if event.key  == pygame.K_w:
-                  player1_change = -0.5
+                  player1_change = -3
                
               if event.key == pygame.K_s:
-                  player1_change = +0.5
+                  player1_change = +3
 
               if event.key == pygame.K_SPACE:
                   if fire1 is True:
@@ -226,10 +226,10 @@ while running:
           if event.type == pygame.KEYDOWN:
             if multiplayer:
                 if event.key  == pygame.K_UP:
-                    player2_change = -0.5
+                    player2_change = -3
                 
                 if event.key == pygame.K_DOWN:
-                    player2_change = +0.5
+                    player2_change = +3
 
                 if event.key == pygame.K_RALT:
                     if fire2 is True:
